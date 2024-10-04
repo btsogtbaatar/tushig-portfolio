@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "name": "Tourees",
+    "imageUrl": "./och.png",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+      },
+      {
+        "id": 2,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+      }
+    ],
+    "type": "mobile",
+    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
+    "pdfUrl": "./something.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 2,
+        "icon": "typescript",
+        "name": "TypeScript"
+      },
+      {
+        "id": 3,
+        "icon": "spring",
+        "name": "Spring"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "SMOK",
+    "imageUrl": "./smok.png",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+      },
+      {
+        "id": 2,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+      }
+    ],
+    "type": "web",
+    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
+    "pdfUrl": "./something.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 2,
+        "icon": "typescript",
+        "name": "TypeScript"
+      },
+      {
+        "id": 3,
+        "icon": "spring",
+        "name": "Spring"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Maximus",
+    "imageUrl": "./och.png",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+      },
+      {
+        "id": 2,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+      }
+    ],
+    "type": "mobile",
+    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
+    "pdfUrl": "./something.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 2,
+        "icon": "typescript",
+        "name": "TypeScript"
+      },
+      {
+        "id": 3,
+        "icon": "spring",
+        "name": "Spring"
+      }
+    ]
+  }
+]

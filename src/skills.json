@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "javascript",
+    "name": "JavaScript",
+    "description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a multi-paradigm language that supports object-oriented, imperative.",
+    "yearsOfExperience": 6
+  },
+  {
+    "id": 2,
+    "icon": "typescript",
+    "name": "TypeScript",
+    "description": "TypeScript is a strongly typed, object oriented, compiled language. It was designed by Anders Hejlsberg (designer of C#) at Microsoft. TypeScript is both a language and a set of tools.",
+    "yearsOfExperience": 7
+  },
+  {
+    "id": 3,
+    "icon": "spring",
+    "name": "Spring",
+    "description": "Spring is a popular Java application framework for creating enterprise applications. It is lightweight, comprehensive, and highly flexible, and it is one of the most popular Java frameworks.",
+    "yearsOfExperience": 7
+  },
+  {
+    "id": 4,
+    "icon": "react",
+    "name": "React",
+    "description": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+    "yearsOfExperience": 5
+  },
+  {
+    "id": 5,
+    "icon": "angular",
+    "color": "EE1918",
+    "name": "Angular",
+    "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript.",
+    "yearsOfExperience": 4
+  }
+]

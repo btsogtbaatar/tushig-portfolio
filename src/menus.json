@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "text": "Home",
+    "path": "/"
+  },
+  {
+    "id": 2,
+    "text": "Skills",
+    "path": "/skills"
+  },
+  {
+    "id": 3,
+    "text": "Achievements",
+    "path": "/achievements"
+  },
+  {
+    "id": 4,
+    "text": "Projects",
+    "path": "/projects"
+  }
+]

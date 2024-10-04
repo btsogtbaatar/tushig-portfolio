@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "companyLogoUrl": "./tourees.png",
+    "companyName": "Seed Approach LLC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "left",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "companyLogoUrl": "./tanco.png",
+    "companyName": "Tanco LLC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "right",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyLogoUrl": "./iotech.png",
+    "companyName": "IOtech LLC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "left",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyLogoUrl": "./khanbank.svg",
+    "companyName": "Khan Bank JSC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "right",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyLogoUrl": "./khanbank.svg",
+    "companyName": "Khan Bank JSC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "right",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyLogoUrl": "./monott.png",
+    "companyName": "MONOTT LLC",
+    "title": "Senior Full Stack Developer",
+    "startDate": "May 2012",
+    "endDate": "April 2014",
+    "align": "left",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+      },
+      {
+        "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      }
+    ]
+  }
+]
