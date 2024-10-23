@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
-    "companyLogoUrl": "./tourees.png",
-    "companyName": "Seed Approach LLC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
+    "id": 2,
+    "companyLogoUrl": "./tanco.png",
+    "companyName": "Tanco LLC",
+    "title": "Senior Full Stack Software Engineer",
+    "startDate": "June 2022",
+    "endDate": "April 2023",
     "align": "left",
     "paragraphs": [
       {
@@ -14,26 +14,7 @@
       },
       {
         "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "companyLogoUrl": "./tanco.png",
-    "companyName": "Tanco LLC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
-    "align": "right",
-    "paragraphs": [
-      {
-        "id": 1,
-        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
-      },
-      {
-        "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+        "text": "Automated the shipping process by integrating with a third-party shipment system, reducing shipment delays and cutting shipment costs by 15%."
       }
     ]
   },
@@ -41,18 +22,37 @@
     "id": 3,
     "companyLogoUrl": "./iotech.png",
     "companyName": "IOtech LLC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
+    "title": "Senior Full Stack Software Engineer",
+    "startDate": "September 2021",
+    "endDate": "June 2022",
+    "align": "right",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Created RESTful API with 8 microservices for a sales rep order management mobile application using Spring Cloud Discovery, Spring Cloud Config, Spring Cloud Gateway, and OAuth by Keycloak."
+      },
+      {
+        "id": 2,
+        "text": "Developed a sales rep order management mobile application in Flutter and GetX, reducing sales process time by 30%."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyLogoUrl": "./khanbank.svg",
+    "companyName": "Khan Bank JSC",
+    "title": "Senior Full Stack Software Engineer",
+    "startDate": "June 2019",
+    "endDate": "June 2021",
     "align": "left",
     "paragraphs": [
       {
         "id": 1,
-        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+        "text": "Developed online payment modules for intra-bank, ACH, and SWIFT transactions in web and mobile banking applications using React, React Native, and Redux reducing payment processing time by 15% for over 1.5 million customers."
       },
       {
         "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+        "text": "Managed a team of 8 developers in developing microservices in Spring Boot and web applications in Angular."
       }
     ]
   },
@@ -60,37 +60,18 @@
     "id": 3,
     "companyLogoUrl": "./khanbank.svg",
     "companyName": "Khan Bank JSC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
-    "align": "right",
+    "title": "Full Stack Software Engineer",
+    "startDate": "February 2017",
+    "endDate": "June 2019",
+    "align": "left",
     "paragraphs": [
       {
         "id": 1,
-        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+        "text": "Converted a banking system from monolithic to microservice architecture by developing document processing, task management, and transaction microservices with Spring Boot and Kafka."
       },
       {
         "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "companyLogoUrl": "./khanbank.svg",
-    "companyName": "Khan Bank JSC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
-    "align": "right",
-    "paragraphs": [
-      {
-        "id": 1,
-        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
-      },
-      {
-        "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+        "text": "Improved document processing efficiency with a Spring Boot microservice and Angular web application, decreasing average customer service time by 20%."
       }
     ]
   },
@@ -98,18 +79,18 @@
     "id": 3,
     "companyLogoUrl": "./monott.png",
     "companyName": "MONOTT LLC",
-    "title": "Senior Full Stack Developer",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
-    "align": "left",
+    "title": "Full Stack Software Engineer",
+    "startDate": "March 2016",
+    "endDate": "November 2016",
+    "align": "right",
     "paragraphs": [
       {
         "id": 1,
-        "text": "Single-handily built an online store for a retail company using React, Redux, and Spring Boot, with a product catalog, shopping cart, user account management, order management, promotions and discounts, and interactive find store locations on the map feature."
+        "text": "Designed and developed web applications for music and sports streaming using AngularJS."
       },
       {
         "id": 2,
-        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+        "text": "Developed RESTful APIs with Django REST Framework and integrated them with the Wowza video platform for on-demand services."
       }
     ]
   }

@@ -1,38 +1,62 @@
 [
   {
-    "id": 1,
-    "icon": "javascript",
-    "name": "JavaScript",
-    "description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a multi-paradigm language that supports object-oriented, imperative.",
-    "yearsOfExperience": 6
-  },
-  {
     "id": 2,
     "icon": "typescript",
     "name": "TypeScript",
-    "description": "TypeScript is a strongly typed, object oriented, compiled language. It was designed by Anders Hejlsberg (designer of C#) at Microsoft. TypeScript is both a language and a set of tools.",
+    "order": 2,
+    "description": "I began developing web applications in JavaScript in 2015, around the time Angular switched to using TypeScript by default. In 2018, I learned to build Angular web applications with TypeScript.",
     "yearsOfExperience": 7
   },
   {
     "id": 3,
     "icon": "spring",
     "name": "Spring",
-    "description": "Spring is a popular Java application framework for creating enterprise applications. It is lightweight, comprehensive, and highly flexible, and it is one of the most popular Java frameworks.",
+    "order": 1,
+    "description": "In 2018, Khan Bank JSC, where I was employed, decided to transition from a monolithic architecture to a microservice architecture. As a member of the transition team, I was responsible for developing microservices using Spring Boot. ",
     "yearsOfExperience": 7
   },
   {
     "id": 4,
     "icon": "react",
     "name": "React",
-    "description": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+    "description": "The most impactful applications I've developed are banking web and mobile applications for 1.5 million Khan Bank customers, built with React and React Native.",
     "yearsOfExperience": 5
   },
   {
     "id": 5,
+    "icon": "react",
+    "name": "React Native",
+    "description": "The most impactful applications I've developed are banking web and mobile applications for 1.5 million Khan Bank customers, built with React and React Native. In 2015, when React Native was first released, I experiemented with React Native and built a small Instagram clone application.",
+    "yearsOfExperience": 4
+  },
+  {
+    "id": 6,
     "icon": "angular",
     "color": "EE1918",
     "name": "Angular",
-    "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript.",
+    "description": "When I was working for Khan Bank JSC over 40 reusable UI components and 8 modules for a banking intranet web application using Angular. I also led a project to convert these Angular components and modules into npm packages.",
+    "yearsOfExperience": 4
+  },
+  {
+    "id": 7,
+    "icon": "flutter",
+    "name": "Flutter & Dart",
+    "description": "In 2021, I developed a mobile order management app for sales representatives using Flutter, which included 8 different modules such as promotion, task management, order management, shopping cart and user profiles.",
+    "yearsOfExperience": 2
+  },
+  {
+    "id": 9,
+    "icon": "django",
+    "color": "white",
+    "name": "Django & Python",
+    "description": "In 2016, while starting my career as a software engineer and pursuing my Bachelor's degree in Computer Science, I developed web applications for sports and music streaming.",
+    "yearsOfExperience": 1
+  },
+  {
+    "id": 11,
+    "icon": "redux",
+    "name": "Redux",
+    "description": "Redux is my go-to state management tool for React and React Native applications.",
     "yearsOfExperience": 4
   }
 ]
