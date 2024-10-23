@@ -1,6 +1,13 @@
 import { useState } from 'react';
+import useWindowSize from '../hooks/useWindowSize';
+import Button from './Button';
+import Carousel from './CustomCarousel';
 import Modal from './Modal';
-import Project, { ProjectEvent, ProjectEventType, ProjectModel } from './Project';
+import Project, {
+  ProjectEvent,
+  ProjectEventType,
+  ProjectModel,
+} from './Project';
 
 export interface ProjectsProps {
   projects: ProjectModel[];
@@ -12,6 +19,7 @@ export default function Projects(props: ProjectsProps) {
   >();
   const [eventType, setEventType] = useState<ProjectEventType>();
   const [showModal, setShowModal] = useState(false);
+  const windowSize = useWindowSize();
 
   const onProjectClick = (event: ProjectEvent) => {
     const project = props.projects.find((project) => project.id === event.id);
@@ -20,26 +28,29 @@ export default function Projects(props: ProjectsProps) {
     setShowModal(true);
   };
 
+  const renderModalContent = () => {
+    if (eventType === 'demo') {
+      return (
+        <object
+          height={windowSize.height - 100}
+          aria-label={`Project ${selectedProject?.name} demo`}
+          data={selectedProject?.demoUrl}
+        ></object>
+      );
+    } else if (eventType === 'screenshots') {
+      return <Carousel imageUrls={selectedProject?.screenshots ?? []} />;
+    }
+  };
+
   return (
     <>
       <Modal showModal={showModal} setShowModal={setShowModal}>
-        {eventType === 'demo' ? (
-          <object
-            width="375"
-            height="812"
-            aria-label={`Project ${selectedProject?.name} demo`}
-            data={selectedProject?.demoUrl}
-          ></object>
-        ) : (
-          <object
-            width="375"
-            height="812"
-            aria-label={`Project ${selectedProject?.name} screenshots`}
-            data={selectedProject?.pdfUrl}
-          ></object>
-        )}
+        <Button className="mb-4 w-40" onClick={() => setShowModal(false)}>
+          Close
+        </Button>
+        {renderModalContent()}
       </Modal>
-      <div className="space-y-16 sm:space-y-24">
+      <div className="space-y-24">
         {props.projects.map((project: ProjectModel) => (
           <Project
             key={project.id}

@@ -2,111 +2,449 @@
   {
     "id": 1,
     "name": "Tourees",
-    "imageUrl": "./och.png",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
+    "imageUrlinMobile": "./tourees-portrait.png",
+    "imageUrls": [
+      "./tourees-right.png",
+      "./tourees-portrait.png",
+      "./tourees-left.png"
+    ],
+    "screenshots": [
+      "./tourees_ss/1-portrait.png",
+      "./tourees_ss/2-portrait.png",
+      "./tourees_ss/3-portrait.png",
+      "./tourees_ss/4-portrait.png",
+      "./tourees_ss/5-portrait.png",
+      "./tourees_ss/6-portrait.png"
+    ],
+    "startDate": "February 2024",
+    "endDate": "Present",
     "paragraphs": [
       {
         "id": 1,
-        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+        "text": "Tourees is a platform that connects individuals with independent contractors who offer assistance with various tasks, jobs, and errands. Examples include yard work, electrical services, moving help, and more."
       },
       {
         "id": 2,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+        "text": "Contractors can register their services, create profiles, and showcase their latest work for users to view. They receive notifications when tasks matching their expertise are posted, and the platform includes a chat feature that allows contractors and users to communicate and discuss task details directly within the app."
       }
     ],
     "type": "mobile",
-    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
-    "pdfUrl": "./something.pdf",
+    "linkUrl": "",
+    "demoUrl": "https://player.vimeo.com/video/1020010563",
+    "pdfUrl": "",
     "skills": [
       {
         "id": 1,
-        "icon": "javascript",
-        "name": "JavaScript"
+        "icon": "react",
+        "name": "React Native"
       },
       {
         "id": 2,
+        "icon": "spring",
+        "name": "Spring"
+      },
+      {
+        "id": 3,
+        "icon": "redux",
+        "name": "Redux"
+      },
+      {
+        "id": 4,
         "icon": "typescript",
         "name": "TypeScript"
       },
       {
-        "id": 3,
-        "icon": "spring",
-        "name": "Spring"
+        "id": 5,
+        "icon": "./java.png",
+        "name": "Java"
       }
     ]
   },
   {
     "id": 2,
     "name": "SMOK",
-    "imageUrl": "./smok.png",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
+    "imageUrlinMobile": "./smok.png",
+    "imageUrls": ["./smok.png"],
+    "screenshots": [
+      "./smok_ss/1.png",
+      "./smok_ss/2.png",
+      "./smok_ss/3.png",
+      "./smok_ss/4.png",
+      "./smok_ss/5.png",
+      "./smok_ss/6.png",
+      "./smok_ss/7.png",
+      "./smok_ss/8.png",
+      "./smok_ss/9.png",
+      "./smok_ss/10.png",
+      "./smok_ss/11.png"
+    ],
+    "startDate": "June 2022",
+    "endDate": "April 2023",
     "paragraphs": [
       {
         "id": 1,
-        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+        "text": "SMOK is a well-known brand that produces vaping devices such as electronic cigarettes, vape pens, and vape mods. I developed an online store for its official distributor in Mongolia, where users can browse the product catalog, add items to their shopping cart, create accounts, manage orders, and view available promotions and discounts. Additionally, users can locate the nearest store and get navigation directions on the map."
       },
       {
         "id": 2,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+        "text": "The online store is integrated with 2 different payment gateway to streamline the checkout process and a warehouse system to manage inventory and shipping reducing shipment delays and cutting shipment costs."
       }
     ],
     "type": "web",
-    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
-    "pdfUrl": "./something.pdf",
+    "linkUrl": "https://smok.mn",
+    "demoUrl": "",
+    "pdfUrl": "./smok.pdf",
     "skills": [
+      {
+        "id": 1,
+        "icon": "react",
+        "name": "React"
+      },
+      {
+        "id": 2,
+        "icon": "spring",
+        "name": "Spring"
+      },
       {
         "id": 1,
         "icon": "javascript",
         "name": "JavaScript"
       },
       {
-        "id": 2,
+        "id": 4,
         "icon": "typescript",
         "name": "TypeScript"
       },
       {
-        "id": 3,
+        "id": 5,
+        "icon": "./java.png",
+        "name": "Java"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "SMOK - Admin Panel",
+    "screenshots": [
+      "./smok_admin_ss/1.png",
+      "./smok_admin_ss/2.png",
+      "./smok_admin_ss/3.png",
+      "./smok_admin_ss/4.png"
+    ],
+    "imageUrlinMobile": "./smok-admin.png",
+    "imageUrls": ["./smok-admin.png"],
+    "startDate": "June 2022",
+    "endDate": "April 2023",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "SMOK Admin Panel is a web application that enables administrators to manage user accounts, product catalogs, orders, stores, and promotions. The admin panel provides data visualizations for sales and order insights, allowing administrators to make informed decisions based on data."
+      }
+    ],
+    "type": "web",
+    "linkUrl": "",
+    "demoUrl": "",
+    "pdfUrl": "./smok-admin.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "icon": "react",
+        "name": "React"
+      },
+      {
+        "id": 2,
         "icon": "spring",
         "name": "Spring"
+      },
+      {
+        "id": 1,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 4,
+        "icon": "typescript",
+        "name": "TypeScript"
+      },
+      {
+        "id": 5,
+        "icon": "./java.png",
+        "name": "Java"
       }
     ]
   },
   {
     "id": 3,
     "name": "Maximus",
-    "imageUrl": "./och.png",
-    "startDate": "May 2012",
-    "endDate": "April 2014",
+    "imageUrlinMobile": "./maximus-portrait.png",
+    "imageUrls": [
+      "./maximus-right.png",
+      "./maximus-portrait.png",
+      "./maximus-left.png"
+    ],
+    "startDate": "September 2021",
+    "endDate": "June 2022",
     "paragraphs": [
       {
         "id": 1,
-        "text": "OCH is a web application that allows users to create and share their own custom character sheets for tabletop role-playing games. The app is built with React, TypeScript, and Tailwind CSS. It uses Firebase for authentication and data storage."
+        "text": "Maximus is designed to streamline the entire sales process, from order creation to fulfillment. With easy-to-use features, sales reps can quickly input customer orders, track inventory in real-time, and monitor order statuses. "
       },
       {
         "id": 2,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis impedit soluta repellat enim. Praesentium, minus, at ut doloribus temporibus deleniti minima qui animi neque nam ullam possimus enim tempore!"
+        "text": "The system also allows for instant access to customer history, product catalogs, and pricing, ensuring accurate and efficient order processing. Enhance productivity, reduce manual errors, and improve customer satisfaction with our all-in-one solution for managing sales orders effortlessly."
       }
     ],
     "type": "mobile",
-    "demoUrl": "https://player.vimeo.com/video/1015457045?h=bafaad0e98title=0&byline=0&portrait=0",
-    "pdfUrl": "./something.pdf",
+    "linkUrl": "",
+    "demoUrl": "https://player.vimeo.com/video/1020003162",
+    "pdfUrl": "",
     "skills": [
       {
         "id": 1,
-        "icon": "javascript",
-        "name": "JavaScript"
+        "icon": "flutter",
+        "name": "Flutter"
       },
       {
         "id": 2,
-        "icon": "typescript",
-        "name": "TypeScript"
+        "icon": "getx",
+        "name": "GetX"
       },
       {
         "id": 3,
         "icon": "spring",
         "name": "Spring"
+      },
+      {
+        "id": 6,
+        "icon": "dart",
+        "name": "Dart"
+      },
+      {
+        "id": 7,
+        "icon": "./java.png",
+        "name": "Java"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "OCH",
+    "screenshots": [
+      "./och_ss/1-portrait.png",
+      "./och_ss/2-portrait.png",
+      "./och_ss/3-portrait.png",
+      "./och_ss/4-portrait.png",
+      "./och_ss/5-portrait.png",
+      "./och_ss/6-portrait.png",
+      "./och_ss/7-portrait.png",
+      "./och_ss/8-portrait.png",
+      "./och_ss/9-portrait.png"
+    ],
+    "imageUrlinMobile": "./och-portrait.png",
+    "imageUrls": ["./och-right.png", "./och-portrait.png", "./och-left.png"],
+    "startDate": "June 2019",
+    "endDate": "June 2021",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "OCH (Omni-channel) is a seamless, integrated approach to providing banking services across multiple channels. I developed a mobile and a web application that allows 1.5 million bank customers to access their accounts, transfer funds, pay bills, and apply for loans from anywhere, at any time."
+      },
+      {
+        "id": 2,
+        "text": "The system is integrated with all core banking systems, including ACH, SWIFT, card processing, loan management, and payment platforms."
+      }
+    ],
+    "type": "mobile",
+    "linkUrl": "",
+    "demoUrl": "https://player.vimeo.com/video/1015457045",
+    "pdfUrl": "1",
+    "skills": [
+      {
+        "id": 1,
+        "icon": "react",
+        "name": "React Native"
+      },
+      {
+        "id": 2,
+        "icon": "redux",
+        "name": "Redux"
+      },
+      {
+        "id": 4,
+        "icon": "spring",
+        "name": "Spring"
+      },
+      {
+        "id": 5,
+        "icon": "lerna",
+        "name": "Lerna"
+      },
+      {
+        "id": 6,
+        "icon": "typescript",
+        "name": "TypeScript"
+      },
+      {
+        "id": 7,
+        "icon": "./java.png",
+        "name": "Java"
+      },
+      {
+        "id": 8,
+        "color": "39B6FF",
+        "icon": "./figma.svg",
+        "name": "Figma"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "IMS",
+    "screenshots": [
+      "./ims_ss/1.png",
+      "./ims_ss/2.png",
+      "./ims_ss/4.png",
+      "./ims_ss/5.png",
+      "./ims_ss/7.png",
+      "./ims_ss/8.png"
+    ],
+    "imageUrlinMobile": "./ims.png",
+    "imageUrls": ["./ims.png"],
+    "startDate": "February 2017",
+    "endDate": "June 2019",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "The Internal Management System (IMS) is a centralized intranet platform designed to streamline internal banking operations. It provides employees with quick access to essential tools, resources, and communication channels, enabling smooth collaboration across departments."
+      },
+      {
+        "id": 2,
+        "text": "From handling customer data to managing transactions and approvals, the IMS ensures secure and efficient workflows while maintaining compliance with banking regulations."
+      }
+    ],
+    "type": "web",
+    "linkUrl": "",
+    "demoUrl": "",
+    "pdfUrl": "./ims.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "color": "red",
+        "icon": "angular",
+        "name": "Angular"
+      },
+      {
+        "id": 2,
+        "icon": "spring",
+        "name": "Spring"
+      },
+      {
+        "id": 4,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 3,
+        "icon": "typescript",
+        "name": "TypeScript"
+      }
+    ]
+  },
+
+  {
+    "id": 6,
+    "name": "SPS",
+    "imageUrlinMobile": "./sps.png",
+    "imageUrls": ["./sps.png"],
+    "startDate": "March 2016",
+    "endDate": "November 2016",
+    "screenshots": [
+      "./sps_ss/0.png",
+      "./sps_ss/1.png",
+      "./sps_ss/2.png",
+      "./sps_ss/3.png",
+      "./sps_ss/4.png",
+      "./sps_ss/5.png",
+      "./sps_ss/6.png"
+    ],
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "SPS Sport is Mongolia’s premier sports channel, dedicated to bringing viewers the latest sports events, competitions, and live matches from around the world. I developed a web application that allows users to watch live sports broadcasts, view match schedules, and receive real-time updates on scores and player statistics."
+      },
+      {
+        "id": 2,
+        "text": "The web system includes a VOD module that enables users to watch past matches they may have missed."
+      }
+    ],
+    "type": "web",
+    "linkUrl": "",
+    "demoUrl": "",
+    "pdfUrl": "./sps.pdf",
+    "skills": [
+      {
+        "id": 1,
+        "color": "red",
+        "icon": "angular",
+        "name": "Angular"
+      },
+      {
+        "id": 2,
+        "color": "103E2E",
+        "icon": "django",
+        "name": "Django"
+      },
+      {
+        "id": 3,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 4,
+        "icon": "python",
+        "name": "Python"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Hi-fi",
+    "imageUrlinMobile": "./hifi.png",
+    "imageUrls": ["./hifi.png"],
+    "startDate": "July 2016",
+    "endDate": "November 2016",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Hi-fi is Mongolia's first-ever subscription based music streaming service. I developed a web application that enables users to create profiles, listen to music from hundreds of Mongolian artists, explore artist information, create playlists, and tune in to live radio."
+      }
+    ],
+    "type": "web",
+    "linkUrl": "",
+    "demoUrl": "",
+    "pdfUrl": "",
+    "skills": [
+      {
+        "id": 1,
+        "color": "red",
+        "icon": "angular",
+        "name": "Angular"
+      },
+      {
+        "id": 2,
+        "color": "103E2E",
+        "icon": "django",
+        "name": "Django"
+      },
+      {
+        "id": 3,
+        "icon": "javascript",
+        "name": "JavaScript"
+      },
+      {
+        "id": 4,
+        "icon": "python",
+        "name": "Python"
       }
     ]
   }

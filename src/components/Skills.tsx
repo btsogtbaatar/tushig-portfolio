@@ -1,22 +1,47 @@
 import { Field, Input, Label, Tab, TabGroup, TabList } from '@headlessui/react';
 import clsx from 'clsx';
-import { ChangeEvent, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import Skill, { SkillModel } from './Skill';
 
 export interface SkillProps {
   skills: SkillModel[];
 }
 
+export enum SkillType {
+  All = 'all',
+  Soft = 'soft',
+  Technical = 'technical',
+}
+
 export default function Skills(props: SkillProps) {
   const [skills, setSkills] = useState(props.skills);
+  const [type, setType] = useState<SkillType>(SkillType.All);
+  const [searchText, setSearchText] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.toLowerCase();
-
+  useEffect(() => {
     setSkills(
-      props.skills.filter((skill) => skill.name.toLowerCase().includes(value))
+      props.skills.filter(
+        (skill) =>
+          skill.name.toLowerCase().includes(searchText.toLowerCase()) &&
+          (type === SkillType.All || skill.type === type)
+      )
     );
-  };
+  }, [type, searchText, props.skills]);
+
+  useEffect(() => {
+    const search = searchParams.get('search');
+
+    if (search) {
+      setSearchText(search);
+    }
+  }, [searchParams]);
+
+  const search = (text: string) => {
+    setSearchText(text);
+    setSearchParams({ search: text });
+  }
 
   return (
     <div>
@@ -27,7 +52,8 @@ export default function Skills(props: SkillProps) {
           </Label>
           <Input
             placeholder="Example: react"
-            onChange={onChange}
+            value={searchText}
+            onChange={(e) => search(e.target.value)}
             className={clsx(
               'mt-2 block rounded-md border-none bg-gray-900/90 py-1.5 px-3 text-sm/6 text-white',
               'focus:outline-none data-[focus]:outline-1 data-[focus]:-outline-offset-1 data-[focus]:outline-white/25'
@@ -36,8 +62,9 @@ export default function Skills(props: SkillProps) {
         </Field>
         <TabGroup className="w-full">
           <TabList className="flex gap-4 sm:justify-end">
-            {['Technical', 'Soft', 'All'].map((name) => (
+            {['All', 'Technical', 'Soft'].map((name) => (
               <Tab
+                onClick={() => setType(name.toLowerCase() as SkillType)}
                 key={name}
                 className="flex-1 sm:flex-none py-1 rounded-md px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-gray-900/90 data-[hover]:bg-gray-900/60 data-[selected]:data-[hover]:bg-gray-900/90 data-[focus]:outline-1 data-[focus]:outline-white"
               >

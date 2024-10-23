@@ -22,9 +22,9 @@ export default {
           900: '#212121',
         },
       }
-
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

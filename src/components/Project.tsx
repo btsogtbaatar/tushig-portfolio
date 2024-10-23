@@ -1,10 +1,11 @@
-import { PlayIcon } from '@heroicons/react/16/solid';
-import { PhotoIcon } from '@heroicons/react/20/solid';
+import { LinkIcon, PhotoIcon, PlayIcon } from '@heroicons/react/20/solid';
+import { isMobile } from 'react-device-detect';
+import { useNavigate } from 'react-router-dom';
 import { getIconSrc } from '../utility';
 import H3 from './H3';
 import Paragraph from './Paragraph';
 
-export type ProjectEventType = 'demo' | 'pdf';
+export type ProjectEventType = 'demo' | 'pdf' | 'screenshots';
 
 export type ParagraphModel = {
   id: number;
@@ -21,11 +22,14 @@ export type ProjectSkillModel = {
 export type ProjectModel = {
   id: number;
   name: string;
-  imageUrl: string;
+  imageUrlinMobile: string;
+  screenshots: string[];
+  imageUrls: string[];
   startDate: string;
   endDate: string;
   type: string;
   paragraphs: ParagraphModel[];
+  linkUrl: string;
   demoUrl: string;
   pdfUrl: string;
   skills: ProjectSkillModel[];
@@ -42,15 +46,25 @@ export interface ProjectProps {
 }
 
 export default function Project(props: ProjectProps) {
+  const navigate = useNavigate();
+
   return (
-    <>
-      <div
-        className={`flex ${props.project.type === 'mobile' ? 'flex-col sm:flex-row' : 'flex-col'}`}
-      >
-        <div
-          className={`${props.project.type === 'mobile' ? 'sm:w-[24em]' : 'sm:w-[36em] mx-auto'}`}
-        >
-          <div className="flex flex-row space-x-7 justify-center mb-2">
+    <div>
+      <div className="flex flex-col">
+        <div className="flex flex-row space-x-7 justify-center mb-2">
+          {props.project.linkUrl?.length > 0 && (
+            <a
+              className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
+              target="_blank"
+              href={props.project.linkUrl}
+            >
+              <div className="pb-1">
+                <LinkIcon className="h-4 w-4" />
+              </div>
+              <span className="ml-2 text-sm pb-[1px]">Link</span>
+            </a>
+          )}
+          {props.project.demoUrl?.length > 0 && (
             <div
               className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
               onClick={() =>
@@ -60,57 +74,90 @@ export default function Project(props: ProjectProps) {
               <div className="pb-1">
                 <PlayIcon className="h-4 w-4" />
               </div>
-              <a className="ml-2 text-sm pb-[1px]" href="#">
-                Demo
-              </a>
+              <span className="ml-2 text-sm pb-[1px]">Demo</span>
             </div>
-            <div
-              className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
-              onClick={() =>
-                props.onClick({ id: props.project.id, eventType: 'pdf' })
-              }
-            >
-              <div className="pb-1">
-                <PhotoIcon className="h-4 w-4" />
-              </div>
-              <a className="ml-2 text-sm pb-[1px] font-['Futura']" href="#">
-                Screenshots
-              </a>
+          )}
+          {props.project.screenshots?.length > 0 && (
+            <>
+              {isMobile && props.project?.type === 'web' ? (
+                <a
+                  href={props.project.pdfUrl}
+                  target="_blank"
+                  className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
+                >
+                  <div className="pb-1">
+                    <PhotoIcon className="h-4 w-4" />
+                  </div>
+                  <span className="ml-2 text-sm pb-[1px] font-['Futura']">
+                    Screenshots
+                  </span>
+                </a>
+              ) : (
+                <div
+                  className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
+                  onClick={() =>
+                    props.onClick({
+                      id: props.project.id,
+                      eventType: 'screenshots',
+                    })
+                  }
+                >
+                  <div className="pb-1">
+                    <PhotoIcon className="h-4 w-4" />
+                  </div>
+                  <span className="ml-2 text-sm pb-[1px] font-['Futura']">
+                    Screenshots
+                  </span>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+        <div className="hidden sm:flex flex-row w-full space-x-6 items-center">
+          {props.project.imageUrls.map((imageUrl) => (
+            <div className="flex flex-1">
+              <img
+                key={imageUrl}
+                src={imageUrl}
+                alt={`${props.project.name} screenshot in ${props.project.type} frame.`}
+              />
             </div>
-          </div>
+          ))}
+        </div>
+        <div className="flex sm:hidden flex-row w-full space-x-6">
           <img
-            src={props.project.imageUrl}
+            key={props.project.imageUrlinMobile}
+            src={props.project.imageUrlinMobile}
             alt={`${props.project.name} screenshot in ${props.project.type} frame.`}
           />
         </div>
-        <div
-          className={`flex flex-col ${props.project.type === 'mobile' ? 'sm:ml-14 mt-10' : 'mt-14'}`}
-        >
-          <div className="flex-1">
-            <div className="flex justify-between items-center">
-              <H3>{props.project.name}</H3>
-              <span className="text-xs font-['Futura']">
-                {props.project.startDate} - {props.project.endDate}
-              </span>
-            </div>
-            <div className="flex flex-col space-y-6 mt-6">
-              {props.project.paragraphs.map((paragraph: ParagraphModel) => (
-                <Paragraph key={paragraph.id}>{paragraph.text}</Paragraph>
-              ))}
-            </div>
+      </div>
+      <div className="flex flex-col mt-8">
+        <div className="flex-1">
+          <div className="flex justify-between items-center">
+            <H3>{props.project.name}</H3>
+            <span className="text-xs font-['Futura']">
+              {props.project.startDate} - {props.project.endDate}
+            </span>
           </div>
-          <div className="flex space-x-4 mt-10 justify-end">
-            {props.project.skills.map((skill) => (
-              <img
-                key={skill.id}
-                className="h-8"
-                src={getIconSrc(skill.icon, skill.color)}
-                alt={skill.name}
-              />
+          <div className="flex flex-col space-y-6 mt-6">
+            {props.project.paragraphs.map((paragraph: ParagraphModel) => (
+              <Paragraph key={paragraph.id}>{paragraph.text}</Paragraph>
             ))}
           </div>
         </div>
+        <div className="flex space-x-4 mt-10 justify-end">
+          {props.project.skills.map((skill) => (
+            <img
+              key={skill.id}
+              className="h-8 cursor-pointer"
+              src={getIconSrc(skill.icon, skill.color)}
+              onClick={() => navigate(`/skills?search=${skill.name}`)}
+              alt={skill.name}
+            />
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 }

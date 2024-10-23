@@ -3,9 +3,10 @@
     "id": 2,
     "icon": "typescript",
     "name": "TypeScript",
-    "order": 2,
+    "order": 3,
     "description": "I began developing web applications in JavaScript in 2015, around the time Angular switched to using TypeScript by default. In 2018, I learned to build Angular web applications with TypeScript.",
-    "yearsOfExperience": 7
+    "yearsOfExperience": 7,
+    "type": "technical"
   },
   {
     "id": 3,
@@ -13,21 +14,24 @@
     "name": "Spring",
     "order": 1,
     "description": "In 2018, Khan Bank JSC, where I was employed, decided to transition from a monolithic architecture to a microservice architecture. As a member of the transition team, I was responsible for developing microservices using Spring Boot. ",
-    "yearsOfExperience": 7
+    "yearsOfExperience": 7,
+    "type": "technical"
   },
   {
     "id": 4,
     "icon": "react",
     "name": "React",
     "description": "The most impactful applications I've developed are banking web and mobile applications for 1.5 million Khan Bank customers, built with React and React Native.",
-    "yearsOfExperience": 5
+    "yearsOfExperience": 5,
+    "type": "technical"
   },
   {
     "id": 5,
     "icon": "react",
     "name": "React Native",
     "description": "The most impactful applications I've developed are banking web and mobile applications for 1.5 million Khan Bank customers, built with React and React Native. In 2015, when React Native was first released, I experiemented with React Native and built a small Instagram clone application.",
-    "yearsOfExperience": 4
+    "yearsOfExperience": 4,
+    "type": "technical"
   },
   {
     "id": 6,
@@ -35,14 +39,16 @@
     "color": "EE1918",
     "name": "Angular",
     "description": "When I was working for Khan Bank JSC over 40 reusable UI components and 8 modules for a banking intranet web application using Angular. I also led a project to convert these Angular components and modules into npm packages.",
-    "yearsOfExperience": 4
+    "yearsOfExperience": 4,
+    "type": "technical"
   },
   {
     "id": 7,
     "icon": "flutter",
     "name": "Flutter & Dart",
     "description": "In 2021, I developed a mobile order management app for sales representatives using Flutter, which included 8 different modules such as promotion, task management, order management, shopping cart and user profiles.",
-    "yearsOfExperience": 2
+    "yearsOfExperience": 2,
+    "type": "technical"
   },
   {
     "id": 9,
@@ -50,13 +56,32 @@
     "color": "white",
     "name": "Django & Python",
     "description": "In 2016, while starting my career as a software engineer and pursuing my Bachelor's degree in Computer Science, I developed web applications for sports and music streaming.",
-    "yearsOfExperience": 1
+    "yearsOfExperience": 1,
+    "type": "technical"
   },
   {
     "id": 11,
     "icon": "redux",
     "name": "Redux",
     "description": "Redux is my go-to state management tool for React and React Native applications.",
-    "yearsOfExperience": 4
+    "yearsOfExperience": 4,
+    "type": "technical"
+  },
+  {
+    "id": 12,
+    "icon": "./leadership.svg",
+    "name": "Leadship",
+    "description": "Over the past four years as a Senior Software Engineer, I've led teams of 5-10 developers to successfully complete projects while also mentoring junior developers.",
+    "yearsOfExperience": 4,
+    "type": "soft"
+  },
+  {
+    "id": 13,
+    "icon": "./java.png",
+    "name": "Java",
+    "order": 2,
+    "description": "I began developing websites in Java using Spring MVC in 2017, and later transitioned to Spring Boot for building microservices.",
+    "yearsOfExperience": 7,
+    "type": "technical"
   }
 ]

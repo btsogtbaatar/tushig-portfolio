@@ -1,12 +1,35 @@
 [
   {
+    "id": 1,
+    "companyLogoUrl": "./tourees.png",
+    "companyName": "Seed Approach",
+    "title": "Technical Lead",
+    "startDate": "Feb 2024",
+    "endDate": "Present",
+    "align": "left",
+    "paragraphs": [
+      {
+        "id": 1,
+        "text": "Developed a platform that connects users with independent contractors who assist with various tasks, jobs, and errands via a mobile application built with React Native and Spring Boot."
+      },
+      {
+        "id": 2,
+        "text": "Implemented features allowing users to create tasks by specifying categories, descriptions, addresses, and dates, while contractors can accept and complete tasks using React and Redux."
+      },
+      {
+        "id": 3,
+        "text": "Led and mentored a team of three developers in building the mobile application in React Native and the RESTful API using Spring Boot."
+      }
+    ]
+  },
+  {
     "id": 2,
     "companyLogoUrl": "./tanco.png",
     "companyName": "Tanco LLC",
     "title": "Senior Full Stack Software Engineer",
-    "startDate": "June 2022",
-    "endDate": "April 2023",
-    "align": "left",
+    "startDate": "Jun 2022",
+    "endDate": "Apr 2023",
+    "align": "right",
     "paragraphs": [
       {
         "id": 1,
@@ -14,6 +37,10 @@
       },
       {
         "id": 2,
+        "text": "Created an admin panel using React enabling administrators to manage user accounts, product catalogs, orders, stores, and promotions, while providing data visualizations for sales and order insights."
+      },
+      {
+        "id": 3,
         "text": "Automated the shipping process by integrating with a third-party shipment system, reducing shipment delays and cutting shipment costs by 15%."
       }
     ]
@@ -23,9 +50,9 @@
     "companyLogoUrl": "./iotech.png",
     "companyName": "IOtech LLC",
     "title": "Senior Full Stack Software Engineer",
-    "startDate": "September 2021",
-    "endDate": "June 2022",
-    "align": "right",
+    "startDate": "Sep 2021",
+    "endDate": "Jun 2022",
+    "align": "left",
     "paragraphs": [
       {
         "id": 1,
@@ -33,6 +60,10 @@
       },
       {
         "id": 2,
+        "text": "Created an admin web application in React and Ant Design for managing user accounts, products, promotions, stores, orders, and daily tasks of sales reps."
+      },
+      {
+        "id": 3,
         "text": "Developed a sales rep order management mobile application in Flutter and GetX, reducing sales process time by 30%."
       }
     ]
@@ -42,9 +73,9 @@
     "companyLogoUrl": "./khanbank.svg",
     "companyName": "Khan Bank JSC",
     "title": "Senior Full Stack Software Engineer",
-    "startDate": "June 2019",
-    "endDate": "June 2021",
-    "align": "left",
+    "startDate": "Jun 2019",
+    "endDate": "Jun 2021",
+    "align": "right",
     "paragraphs": [
       {
         "id": 1,
@@ -52,6 +83,10 @@
       },
       {
         "id": 2,
+        "text": "Collaborated with a DevOps team to build CI/CD pipelines by containerizing microservices using Docker and measuring code coverage with SonarQube and JaCoCo."
+      },
+      {
+        "id": 3,
         "text": "Managed a team of 8 developers in developing microservices in Spring Boot and web applications in Angular."
       }
     ]
@@ -61,9 +96,9 @@
     "companyLogoUrl": "./khanbank.svg",
     "companyName": "Khan Bank JSC",
     "title": "Full Stack Software Engineer",
-    "startDate": "February 2017",
-    "endDate": "June 2019",
-    "align": "left",
+    "startDate": "Feb 2017",
+    "endDate": "Jun 2019",
+    "align": "right",
     "paragraphs": [
       {
         "id": 1,
@@ -71,6 +106,10 @@
       },
       {
         "id": 2,
+        "text": "Developed authentication, authorization, and banking teller modules for an Angular intranet system used in 500+ branches."
+      },
+      {
+        "id": 3,
         "text": "Improved document processing efficiency with a Spring Boot microservice and Angular web application, decreasing average customer service time by 20%."
       }
     ]
@@ -80,9 +119,9 @@
     "companyLogoUrl": "./monott.png",
     "companyName": "MONOTT LLC",
     "title": "Full Stack Software Engineer",
-    "startDate": "March 2016",
-    "endDate": "November 2016",
-    "align": "right",
+    "startDate": "Mar 2016",
+    "endDate": "Nov 2016",
+    "align": "left",
     "paragraphs": [
       {
         "id": 1,

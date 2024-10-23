@@ -6,7 +6,7 @@ export interface AchievementsProps {
 
 export default function Achievements(props: AchievementsProps) {
   return (
-    <div className="space-y-16 sm:space-y-32">
+    <div className="space-y-16 sm:space-y-24">
       {props.achievements.map((achievement) => (
         <Achievement key={achievement.id} achievement={achievement}/>
       ))}

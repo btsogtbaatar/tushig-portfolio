@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
 
-export default function Logo() {
+export interface LogoProps {
+  onPress: () => void;
+}
+
+export default function Logo(props: LogoProps) {
+
   return (
-    <div className="flex flex-shrink-0 items-center">
-      <Link to={"/"} >
-        <img className="h-16 w-auto" src="./logo.svg" alt="Tushig" />
-      </Link>
+    <div className="select-none">
+      <img
+        className="h-16 w-auto"
+        src="./logo.svg"
+        alt="Paper Plane Logo"
+        onClick={props.onPress}
+      />
     </div>
   );
 }

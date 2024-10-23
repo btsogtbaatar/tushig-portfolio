@@ -14,3 +14,15 @@
   padding: 0 !important;
   max-width: none !important;
 }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #757575;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #f5f5f5;
+}

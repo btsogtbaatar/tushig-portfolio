@@ -26,9 +26,12 @@ export default function Modal(props: ModalProps) {
       {props.showModal ? (
         <>
           <div className="justify-center items-center flex fixed inset-0 z-50">
-            <div className="relative mx-auto">{props.children}</div>
+            <div className="relative mx-auto flex flex-col items-center w-full h-full p-10">
+              <div className="absolute flex flex-col items-center justify-center w-full inset-y-0 p-4">
+                {props.children}
+              </div>
+            </div>
           </div>
-
           <div
             className="fixed inset-0 bg-black bg-opacity-80 transition-opacity z-40"
             aria-hidden="true"

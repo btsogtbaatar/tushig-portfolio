@@ -15,8 +15,9 @@ export default function AboutMe() {
             <div className="flex flex-col mt-2 sm:ml-6 sm:mt-0">
               <h4 className="text-lg">Tushig Tsogtbaatar</h4>
               <Paragraph className="text-sm mt-2 font-thin">
-                I'm a <strong>full stack developer</strong> from <strong>Mongolia</strong> 🇲🇳 with{' '}
-                <strong>7 years</strong> of expertise in designing and developing{' '}
+                I'm a <strong>full stack developer</strong> from{' '}
+                <strong>Mongolia</strong> 🇲🇳 with <strong>7 years</strong> of
+                expertise in designing and developing{' '}
                 <strong>web and mobile applications</strong>.
               </Paragraph>
               <div className="flex space-x-4 mt-4 content-center">
@@ -46,7 +47,17 @@ export default function AboutMe() {
           </div>
         </div>
       )}
-      <Button onClick={() => toggle((show) => !show)}>Learn about me</Button>
+      <div className="relative">
+        {!show && (
+          <span className="absolute right-[-5px] top-[-5px] flex h-3 w-3 select-none">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+        )}
+        <Button onClick={() => toggle((show) => !show)}>
+          {show ? 'Close' : 'About me'}
+        </Button>
+      </div>
     </div>
   );
 }

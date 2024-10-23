@@ -10,6 +10,7 @@ export type SkillModel = {
   color?: string;
   description: string;
   order?: number;
+  type: string;
   yearsOfExperience: number;
 };
 
