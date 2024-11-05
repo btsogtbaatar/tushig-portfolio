@@ -17,3 +17,10 @@ function isImage(fileUrl: string) {
   const fileExtension = fileUrl.toLowerCase().split('.').pop();
   return fileExtension && allowedExtensions.includes(fileExtension);
 }
+
+export function capitalizeWords(sentence: string) {
+  return sentence
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}

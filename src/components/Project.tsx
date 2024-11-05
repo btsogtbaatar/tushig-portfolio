@@ -1,4 +1,9 @@
-import { LinkIcon, PhotoIcon, PlayIcon } from '@heroicons/react/20/solid';
+import {
+  ArrowTopRightOnSquareIcon,
+  LinkIcon,
+  PhotoIcon,
+  PlayIcon,
+} from '@heroicons/react/20/solid';
 import { isMobile } from 'react-device-detect';
 import { useNavigate } from 'react-router-dom';
 import { getIconSrc } from '../utility';
@@ -23,7 +28,7 @@ export type ProjectModel = {
   id: number;
   name: string;
   imageUrlinMobile: string;
-  screenshots: string[];
+  screenshots?: string[];
   imageUrls: string[];
   startDate: string;
   endDate: string;
@@ -58,9 +63,7 @@ export default function Project(props: ProjectProps) {
               target="_blank"
               href={props.project.linkUrl}
             >
-              <div className="pb-1">
-                <LinkIcon className="h-4 w-4" />
-              </div>
+              <LinkIcon className="h-4 w-4" />
               <span className="ml-2 text-sm pb-[1px]">Link</span>
             </a>
           )}
@@ -71,47 +74,42 @@ export default function Project(props: ProjectProps) {
                 props.onClick({ id: props.project.id, eventType: 'demo' })
               }
             >
-              <div className="pb-1">
-                <PlayIcon className="h-4 w-4" />
-              </div>
+              <PlayIcon className="h-4 w-4" />
               <span className="ml-2 text-sm pb-[1px]">Demo</span>
             </div>
           )}
-          {props.project.screenshots?.length > 0 && (
-            <>
-              {isMobile && props.project?.type === 'web' ? (
-                <a
-                  href={props.project.pdfUrl}
-                  target="_blank"
-                  className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
-                >
-                  <div className="pb-1">
+          {props.project.screenshots &&
+            props.project.screenshots?.length > 0 && (
+              <>
+                {isMobile && props.project?.type === 'web' ? (
+                  <a
+                    href={props.project.pdfUrl}
+                    target="_blank"
+                    className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
+                  >
+                    <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+                    <span className="ml-2 text-sm pb-[1px] font-['Futura']">
+                      Screenshots
+                    </span>
+                  </a>
+                ) : (
+                  <div
+                    className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
+                    onClick={() =>
+                      props.onClick({
+                        id: props.project.id,
+                        eventType: 'screenshots',
+                      })
+                    }
+                  >
                     <PhotoIcon className="h-4 w-4" />
+                    <span className="ml-2 text-sm pb-[1px] font-['Futura']">
+                      Screenshots
+                    </span>
                   </div>
-                  <span className="ml-2 text-sm pb-[1px] font-['Futura']">
-                    Screenshots
-                  </span>
-                </a>
-              ) : (
-                <div
-                  className="flex flex-row items-center mb-2 hover:underline hover:cursor-pointer"
-                  onClick={() =>
-                    props.onClick({
-                      id: props.project.id,
-                      eventType: 'screenshots',
-                    })
-                  }
-                >
-                  <div className="pb-1">
-                    <PhotoIcon className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm pb-[1px] font-['Futura']">
-                    Screenshots
-                  </span>
-                </div>
-              )}
-            </>
-          )}
+                )}
+              </>
+            )}
         </div>
         <div className="hidden sm:flex flex-row w-full space-x-6 items-center">
           {props.project.imageUrls.map((imageUrl) => (

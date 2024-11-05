@@ -1,6 +1,7 @@
 import { isMobile } from 'react-device-detect';
 import { useNavigate } from 'react-router-dom';
 import AboutMe from '../components/AboutMe';
+import BuiltWith from '../components/BuiltWith';
 import SplineBase from '../components/SplineBase';
 
 export default function HomePage() {
@@ -30,6 +31,7 @@ export default function HomePage() {
         />
       )}
       <AboutMe />
+      <BuiltWith />
     </div>
   );
 }

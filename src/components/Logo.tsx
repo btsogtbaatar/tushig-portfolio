@@ -6,7 +6,7 @@ export interface LogoProps {
 export default function Logo(props: LogoProps) {
 
   return (
-    <div className="select-none">
+    <div className="select-none cursor-pointer">
       <img
         className="h-16 w-auto"
         src="./logo.svg"

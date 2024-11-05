@@ -16,7 +16,7 @@ export default function AboutMe() {
               <h4 className="text-lg">Tushig Tsogtbaatar</h4>
               <Paragraph className="text-sm mt-2 font-thin">
                 I'm a <strong>full stack developer</strong> from{' '}
-                <strong>Mongolia</strong> 🇲🇳 with <strong>7 years</strong> of
+                <strong>Mongolia</strong> 🇲🇳 with <strong>8 years</strong> of
                 expertise in designing and developing{' '}
                 <strong>web and mobile applications</strong>.
               </Paragraph>

@@ -57,6 +57,12 @@
         "id": 5,
         "icon": "./java.png",
         "name": "Java"
+      },
+      {
+        "id": 6,
+        "color": "FF9C15",
+        "icon": "amazonwebservices",
+        "name": "AWS"
       }
     ]
   },
@@ -275,11 +281,6 @@
         "name": "Spring"
       },
       {
-        "id": 5,
-        "icon": "lerna",
-        "name": "Lerna"
-      },
-      {
         "id": 6,
         "icon": "typescript",
         "name": "TypeScript"
@@ -294,6 +295,17 @@
         "color": "39B6FF",
         "icon": "./figma.svg",
         "name": "Figma"
+      },
+      {
+        "id": 9,
+        "color": "2F99EF",
+        "icon": "apachekafka",
+        "name": "Kafka"
+      },
+      {
+        "id": 10,
+        "icon": "./apigee.png",
+        "name": "APIGEE"
       }
     ]
   },
@@ -347,6 +359,11 @@
         "id": 3,
         "icon": "typescript",
         "name": "TypeScript"
+      },
+      {
+        "id": 4,
+        "icon": "./apigee.png",
+        "name": "APIGEE"
       }
     ]
   },
@@ -413,6 +430,7 @@
     "imageUrls": ["./hifi.png"],
     "startDate": "July 2016",
     "endDate": "November 2016",
+    "screenshots": ["./hifi_ss/1.png"],
     "paragraphs": [
       {
         "id": 1,

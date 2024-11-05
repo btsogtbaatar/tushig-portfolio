@@ -10,7 +10,7 @@ export default function SkillsPage() {
       <PageHeader backgroundImageUrl="./skills_bg.png">Skills</PageHeader>
       <PageBody>
         <Article className='mb-8'>
-          Here are my skills I have acquired over my 7 years of professional experience.
+          Here are my skills I have acquired over my 8 years of professional experience.
         </Article>
         <Skills skills={skills} />
       </PageBody>

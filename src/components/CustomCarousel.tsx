@@ -1,6 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import { useState } from 'react';
-import 'react-multi-carousel/lib/styles.css';
 
 export interface CustomCarouselProps {
   imageUrls: string[];
@@ -35,6 +34,7 @@ function CustomCarousel(props: CustomCarouselProps) {
         {props.imageUrls.map((imageUrl: string, index: number) => (
           <div className="flex w-full h-full items-center justify-center content-center">
             <img
+              alt=""
               className={currentIndex === index ? 'block' : 'hidden'}
               key={index}
               src={imageUrl}

@@ -2,6 +2,8 @@ import { Field, Input, Label, Tab, TabGroup, TabList } from '@headlessui/react';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { capitalizeWords } from '../utility';
+import CustomSelect from './CustomSelect';
 import Skill, { SkillModel } from './Skill';
 
 export interface SkillProps {
@@ -10,8 +12,10 @@ export interface SkillProps {
 
 export enum SkillType {
   All = 'all',
+  Development = 'development',
+  Database = 'database',
+  Tools = 'tools',
   Soft = 'soft',
-  Technical = 'technical',
 }
 
 export default function Skills(props: SkillProps) {
@@ -32,20 +36,30 @@ export default function Skills(props: SkillProps) {
 
   useEffect(() => {
     const search = searchParams.get('search');
+    const type = searchParams.get('type');
 
     if (search) {
       setSearchText(search);
+    }
+
+    if (type) {
+      setType(type as SkillType);
     }
   }, [searchParams]);
 
   const search = (text: string) => {
     setSearchText(text);
-    setSearchParams({ search: text });
-  }
+    setSearchParams({ search: text, type: type });
+  };
+
+  const selectType = (type: SkillType) => {
+    setType(type);
+    setSearchParams({ search: searchText, type: type });
+  };
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row items-end space-y-3 sm:space-y-0 sm:pr-24 mb-3 sm:mb-1">
+      <div className="flex flex-col sm:flex-row items-end space-y-3 sm:space-y-0 sm:pr-24 mb-3 sm:mb-1 space-x-4">
         <Field className="flex w-full flex-col">
           <Label className="text-sm/6 font-medium text-white">
             Search by name
@@ -60,19 +74,30 @@ export default function Skills(props: SkillProps) {
             )}
           />
         </Field>
-        <TabGroup className="w-full">
+        <TabGroup className="hidden sm:block w-full">
           <TabList className="flex gap-4 sm:justify-end">
-            {['All', 'Technical', 'Soft'].map((name) => (
+            {Object.values(SkillType).map((name) => (
               <Tab
-                onClick={() => setType(name.toLowerCase() as SkillType)}
+                onClick={() => selectType(name.toLowerCase() as SkillType)}
                 key={name}
-                className="flex-1 sm:flex-none py-1 rounded-md px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-gray-900/90 data-[hover]:bg-gray-900/60 data-[selected]:data-[hover]:bg-gray-900/90 data-[focus]:outline-1 data-[focus]:outline-white"
+                className={clsx(
+                  'flex-1 sm:flex-none py-1 rounded-md px-3 text-sm/6 font-semibold text-white focus:outline-none data-[hover]:bg-gray-900/60 data-[focus]:outline-1 data-[focus]:outline-white capitalize',
+                  type === name.toLowerCase() && 'bg-gray-900/90'
+                )}
               >
                 {name}
               </Tab>
             ))}
           </TabList>
         </TabGroup>
+        <CustomSelect
+          className="block sm:hidden"
+          options={Object.values(SkillType).map((option) => ({
+            value: option.toLowerCase(),
+            label: capitalizeWords(option),
+          }))}
+          onChange={(option: string) => selectType(option as SkillType)}
+        />
       </div>
       <div className="justify-end hidden sm:flex">
         <div className="px-8 text-sm font-[Futura]">YoE</div>
